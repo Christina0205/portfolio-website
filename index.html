@@ -3,10 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>JingJiang</title>
+    <style>
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 14px;
+}
+/* 
+nav ul li a:hover {
+    text-decoration: underline;
+} */
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: aliceblue;
+    margin-bottom: 5px;
+}
+
+.hero img {
+    width:280px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e44e4e;
+}
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is my GitHub Pages website.</p>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Christina.html">HOME</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="research.html">RESEARCH</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="hero">
+        <img src="大头照.jpeg" alt="">
+        <h1>Jing Jiang</h1>
+        <p>Computer Science, Class of 2027</p>
+        <p>New York University, Tandon School of Engineering</p>
+        <div class="buttons">
+            <a href="research.html" class="btn">RESEARCH</a>
+            <a href="resume.html" class="btn">RESUME</a>
+        </div>
+    </section>
+
 </body>
 </html>
